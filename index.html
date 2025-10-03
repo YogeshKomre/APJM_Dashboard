@@ -20,8 +20,26 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     h1 {
-      color: #2c3e50;
-    }
+       color: #2c3e50;
+     }
+     h2 {
+       color: #3498db;
+       margin-top: 1.5rem;
+     }
+     ul, ol {
+       text-align: left;
+       margin: 1rem 0;
+     }
+     li {
+       margin-bottom: 0.5rem;
+     }
+     code {
+       background-color: #f8f9fa;
+       padding: 2px 4px;
+       border-radius: 3px;
+       font-family: 'Courier New', monospace;
+       color: #e74c3c;
+     }
   </style>
 </head>
 <body>
@@ -29,7 +47,33 @@
     <h1>APJM Dashboard</h1>
     <p>Cisco Finesse Call Monitoring System</p>
     <p>A full-stack application for monitoring Cisco Finesse for wrong number dialing.</p>
-    <p><strong>Note:</strong> This GitHub Pages site only hosts the frontend. For full functionality, the backend server needs to be running.</p>
+    
+    <h2>Backend Features</h2>
+    <ul>
+      <li><strong>Express.js Server:</strong> RESTful API with authentication</li>
+      <li><strong>Socket.IO:</strong> Real-time communication for live notifications</li>
+      <li><strong>MongoDB Integration:</strong> Data persistence for users and notifications</li>
+      <li><strong>JWT Authentication:</strong> Secure user sessions</li>
+      <li><strong>CORS Support:</strong> Cross-origin resource sharing</li>
+    </ul>
+    
+    <h2>API Endpoints</h2>
+    <ul>
+      <li><code>/api/auth</code> - User authentication</li>
+      <li><code>/api/agents</code> - Agent management</li>
+      <li><code>/api/notifications</code> - Notification handling</li>
+    </ul>
+    
+    <h2>Running the Full Application</h2>
+    <p>To run the complete APJM Dashboard with backend functionality:</p>
+    <ol>
+      <li>Clone the repository: <code>git clone https://github.com/YogeshKomre/APJM_Dashboard.git</code></li>
+      <li>Install dependencies: <code>npm run install-all</code></li>
+      <li>Set up environment variables in <code>.env</code> file</li>
+      <li>Start both frontend and backend: <code>npm run dev-all</code></li>
+    </ol>
+    
+    <p><strong>Note:</strong> This GitHub Pages site only hosts the frontend. For full functionality, the backend server needs to be running locally or deployed separately.</p>
   </div>
 </body>
 </html>
