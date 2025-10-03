@@ -11,7 +11,9 @@
     "server-install": "npm install",
     "install-all": "npm run server-install && npm run client-install",
     "dev-all": "concurrently \"npm run dev\" \"npm run client\"",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d client/build"
   },
   "keywords": [
     "cisco",
@@ -34,6 +36,8 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
+    "gh-pages": "^6.3.0",
     "nodemon": "^3.0.1"
-  }
+  },
+  "homepage": "https://yogeshkomre.github.io/APJM_Dashboard"
 }
